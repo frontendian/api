@@ -1,0 +1,28 @@
+{
+  "name": "@frontendian/api",
+  "version": "0.1.0",
+  "description": "The Frontendian API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendian/api.git"
+  },
+  "author": "Ryan Miller (@andryanmiller)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontendian/api/issues"
+  },
+  "homepage": "https://github.com/frontendian/api#readme",
+  "dependencies": {
+    "@hapi/basic": "5.1.0",
+    "boom": "7.3.0",
+    "catbox": "10.0.6",
+    "catbox-redis": "4.2.4",
+    "elasticsearch": "15.4.1",
+    "hapi": "18.1.0",
+    "joi": "14.3.1"
+  }
+}

@@ -1,0 +1,33 @@
+const Joi = require('joi')
+
+module.exports = Joi.object().keys({
+  id: Joi.string().required(),
+  slug: Joi.string().required(),
+  title: Joi.string().required(),
+  body_html: Joi.string().required(),
+  body_markdown: Joi.string().required(),
+  body_text: Joi.string().required(),
+  excerpt: Joi.string().required(),
+  language: Joi.string().required(),
+  language_alternates: Joi.array().items(Joi.string()),
+  categories: Joi.array().items(Joi.string()),
+  keywords: Joi.array().items(Joi.string()),
+  published: Joi.boolean().required(),
+  published_date: Joi.date(),
+  comments: Joi.boolean().required(),
+  hero_image: Joi.string().required(),
+  og_title: Joi.string(),
+  og_description: Joi.string(),
+  og_image: Joi.string(),
+  twitter_title: Joi.string(),
+  twitter_description: Joi.string(),
+  twitter_image: Joi.string(),
+  author_name: Joi.string().required(),
+  author_avatar: Joi.string(),
+  author_twitter: Joi.string(),
+  author_website: Joi.string(),
+  translator_name: Joi.string(),
+  translator_avatar: Joi.string(),
+  translator_twitter: Joi.string(),
+  translator_website: Joi.string()
+}).options({ stripUnknown: true })
