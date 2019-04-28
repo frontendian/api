@@ -1,9 +1,9 @@
-const Hapi = require('hapi')
+const Hapi = require('@hapi/hapi')
 
 const initialize = async () => { 
   const server = Hapi.server({
     port: process.env.PORT || 8000,
-    cache: require('catbox-redis')
+    cache: require('@hapi/catbox-redis')
   })
 
   await server.register(require('@hapi/basic'))

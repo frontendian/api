@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/frontendian/api#readme",
   "dependencies": {
+    "@elastic/elasticsearch": "7.0.0-rc.2",
     "@hapi/basic": "5.1.0",
-    "boom": "7.3.0",
-    "catbox": "10.0.6",
-    "catbox-redis": "4.2.4",
-    "elasticsearch": "15.4.1",
-    "hapi": "18.1.0",
-    "joi": "14.3.1"
+    "@hapi/boom": "7.4.2",
+    "@hapi/catbox": "10.2.1",
+    "@hapi/catbox-redis": "5.0.1",
+    "@hapi/hapi": "18.3.1",
+    "@hapi/joi": "15.0.0"
   }
 }

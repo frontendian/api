@@ -1,4 +1,4 @@
-const Boom = require('boom')
+const Boom = require('@hapi/boom')
 const Elasticsearch = require('@elastic/elasticsearch')
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
         if (err.statusCode === 404) throw Boom.notFound()
       } 
 
-      throw Boom.badImplementation()
+      throw Boom.badImplementation(err)
     }
   }
 }

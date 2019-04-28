@@ -1,4 +1,3 @@
-const Elasticsearch = require('@elastic/elasticsearch')
 const ElasticsearchClient = require('../clients/elasticsearch')
 
 module.exports = {
